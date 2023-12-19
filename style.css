@@ -1,0 +1,617 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(asset/font/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+ 
+  list-style: none;
+}
+li {
+  font-family: Montserrat;
+  font-weight: 600;
+}
+button:hover {
+  background:white;
+  cursor: pointer;
+  transform: scale(1.1);
+  user-select: none;
+  color: red;
+}
+button {
+  background: none;
+}
+/* !==========================================HEADER */
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+nav ul {
+  margin-top: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+nav li:first-child{
+  color: rgb(95,4, 170);
+}
+nav li {
+  position: relative;
+  transition: 1s;
+  cursor: pointer;
+}
+nav li button {
+  background: #e0e0e0;
+  border-radius: 20px;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  border: none;
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+nav li:hover{
+  letter-spacing: 3px;
+}
+nav li:nth-child(1):before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: purple;
+  transform: translateY(-30px);
+}nav li:hover{
+  color: rgb(95,4, 170);
+}
+nav li:hover:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: purple;
+  transform: translateY(-30px);
+  cursor: pointer;
+}
+nav li:last-child:hover::before{
+  background: none;
+}
+
+/* !=====================================premierepartie */
+.premierepartie {
+  background: url(asset/img/bg.jpg) fixed center/cover no-repeat;
+  height: 610px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#liste1 img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+#liste1 li {
+  margin: 10px;
+  font-size: 1.6rem;
+}
+#lalistedanslaliste {
+  display: flex;
+}
+#lalistedanslaliste li {
+  margin-left: 0;
+}
+#liste1 button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  width: 400px;
+  letter-spacing: 5px;
+  font-family: Montserrat;
+  margin-top: 20px;
+  transition: 1s;
+  color: white;
+  border: 1px solid white;
+}
+#liste1 button:hover{
+  color: black;
+  border: none;
+  transition: 1s;
+}
+
+/*!=========================================secondepartie */
+.secondepartie {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.secondepartie p {
+  width: 70%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+/* !==================================partietrois */
+.partietrois {
+  background: #151515;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contenaire-3-1 {
+  width: 70%;
+}
+#contenaire-3-1 ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#contenaire-3-1 ul li ul {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+#contenaire-3-1 ul li ul li {
+  margin-top: 10px;
+}
+#contenaire-3-1 ul li ul li:nth-child(3) {
+  font-weight: 200;
+  text-align: center;
+  width: 300px;
+}
+#contenaire-3-1 button{
+  padding: 10px;
+  font-family:Montserrat;
+  color: white;
+  transition: 1s;
+  border: 1px solid white;
+  width: 50%;
+}
+#contenaire-3-1 button:hover{
+  color: black;
+  border: none;
+  transition: 1s;
+}
+/* !===============================================parie4 */
+.parie4 {
+  background: #f7f7f7;
+}
+/* ===============================================ensembledes2partie*/
+.ensembledes2partie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 750px;
+}
+/* ================================premiererpartie */
+#premiererpartie {
+  display: grid;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 70%;
+  padding: 20px;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+  font-family: Montserrat;
+  /* border: 1px solid black; */
+}
+#premiererpartie h3 {
+  font-weight: 100;
+}
+#premiererpartie p {
+  font-size: 0.8rem;
+}
+#premiererpartie h3,
+#premiererpartie p {
+  margin-left: 100px;
+  margin-top: 5px;
+}
+#premiererpartie button {
+  border: 1px solid black;
+  text-align: center;
+  text-decoration: none;
+  width: 55%;
+  padding: 10px;
+  
+  transition: 1s;
+  letter-spacing: 2px;
+}
+#premiererpartie button:hover{
+  border: none;
+  background: black;
+  color: white;
+  transition: 1s;
+ 
+}
+#premiererpartie button:active{
+  background-color: red;
+}
+
+/* ==========================deuxiememepartie */
+
+#deuxiememepartie {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  font-family: Montserrat;
+}
+#deuxiememepartie img{
+  object-fit: cover;
+  box-shadow: 0px 0px 4px 0px black;
+
+}
+
+#image1,
+#image2,
+#image3 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 20%;
+}
+#image1 h3,
+#image1 p,
+#image2 h3,
+#image2 p,
+#image3 h3,
+#image3 p {
+  margin-top: 20px;
+}
+#deuxiememepartie p{
+  line-height: 25px;
+  font-weight: 100;
+}
+#image1 a {
+  margin-top: 27px;
+}
+#image2 a {
+  margin-top: 55px;
+}
+#image3 a {
+  margin-top: 78px;
+}
+#image1 a,
+#image2 a,
+#image3 a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: purple;
+  transition: 1s;
+}
+#deuxiememepartie a:hover{
+  color: gold;
+  letter-spacing: 5px;
+}
+/* !=========================================partie5 */
+.partie5 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+  position: relative;
+}
+.partie5::after{
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.050);
+  bottom:-30px;
+}
+/* =======================================ulmer */
+#ulmer {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+#ulmer img {
+  margin-top: 10px;
+}
+#ulmer ul {
+  width: 200px;
+}
+/* =======================================premiereliste */
+#premiereliste li {
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+#premiereliste li a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: purple;
+  transition: 0.2s;
+}
+#premiereliste li:first-child:hover{
+  transform:none;
+}
+#premiereliste li a:hover{
+  color: gold;
+  letter-spacing: 2px;
+  transform: scale(1.8);
+}
+#premiereliste li:hover{
+  transform: translateX(5px);
+}
+
+/* =====================================deuxiemeliste */
+#deuxiemliste li {
+  margin-top: 10px;
+}
+#deuxiemliste li p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+#deuxiemliste li a {
+  text-decoration: none;
+  color: purple;
+  transition: 0.3s;
+}
+#deuxiemliste li:last-child:hover{
+  transform: scaleX(1.3);
+  transform: translateX(5px);
+}
+#deuxiemliste li a:last-child:hover{
+  color: gold;
+  letter-spacing: 2px;
+}
+/* ======================================troisiemliste */
+#troisiemliste #oui {
+  margin-top: 5px;
+}
+#troisiemliste #social {
+}
+#social {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#social img {
+  margin-right: 10px;
+}
+/* !===================================partie6 */
+.partie6 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+#contenairepartie6 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  width: 75%;
+}
+#partiedroite img {
+  margin-left: 30px;
+}
+#partiegauche {
+  font-family: Montserrat;
+}
+#partiegauche h3 {
+  font-weight: 400;
+}
+#partiegauche p {
+  margin-top: 10px;
+  font-weight: 600;
+}
+/* !===================================partie7 */
+.partie7 {
+  background: black;
+  color: white;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+}
+.partie7 img {
+  margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*? =======================================MEDIA QUIREY */
+@media screen and (max-width: 1394px){
+  #premiererpartie button{
+    padding: 5px;
+    font-size: 0.7rem;
+    
+  }
+}
+@media screen and (max-width: 1220px){
+  #partiedroite img{
+    margin-left: 5px;
+  }
+
+@media screen and (max-width: 1120px) {
+  li {
+    font-weight: 300;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width:1000px){
+  #premiererpartie{
+  display: flex;
+  flex-direction: column;
+  }
+  #premiererpartie h3,#premiererpartie p{
+    text-align: center;
+  }
+  #premiererpartie button{
+    width: 20%;
+    transform: translateX(50%);
+  }
+  #premiererpartie h3,#premiererpartie p,#premiererpartie button{
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  header {
+    display: none;
+  }
+  #liste1 li {
+    font-size: 1rem;
+  }
+
+  #liste1 li img {
+    width: 300px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  #lalistedanslaliste {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "p1 p2"
+      "p3 p3";
+  }
+  #lalistedanslaliste li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  #lalistedanslaliste li:nth-child(1) {
+    grid-area: p1;
+    color: #ccd1e8;
+  }
+  #lalistedanslaliste li:nth-child(2) {
+    grid-area: p2;
+    color: #ccd1e8;
+    margin-left: 0;
+  }
+  #lalistedanslaliste li:nth-child(3) {
+    grid-area: p3;
+    margin: 0 auto;
+  }
+  #liste1 p {
+    padding: 10px;
+    width: 350px;
+    letter-spacing: 3px;
+  }
+  /* ?==================================seconde partie */
+  .secondepartie p {
+    font-size: 0.9rem;
+    width: 90%;
+    text-align: justify;
+  }
+  /* ?==================================mediaquery partietrois */
+  .partietrois {
+    height: 1000px;
+  }
+  #contenaire-3-1 ul {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+  }
+  #contenaire-3-1 ul li ul li:nth-child(3) {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  #contenaire-3-1 ul li ul li:nth-child(2) {
+    font-weight: bold;
+  }
+  #ensavoir a {
+    border: 1px solid white;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.6rem;
+  }
+  /* ?====================MEDIAQUERY#premiererpartie */
+  #premiererpartie {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  #premiererpartie h3 {
+    margin-top: 20px;
+    margin-left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    font-size: 1.3rem;
+  }
+  #premiererpartie h3 {
+  }
+  #premiererpartie p {
+    text-align: left;
+    font-size: 0.6rem;
+    margin-top: 5px;
+    transform: translateX(-30%);
+    width: 100%;
+    font-weight: bold;
+  }
+  #premiererpartie a {
+    margin-top: 10px;
+    padding: 5px;
+  }
+  /* ?==========================MEDIAQUERYdeuxiememepartie */
+  .ensembledes2partie {
+    height: 1800px;
+  }
+  #premiererpartie{
+    margin-top:-50px;
+  }
+  #deuxiememepartie {
+    display: block;
+  }
+
+  #image1,
+  #image2,
+  #image3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  #image1 img,
+  #image2 img,
+  #image3 img {
+    width: 30vh;
+    margin: 0 auto;
+    box-shadow: 1px 1px 7px 0px black;
+  }
+  #deuxiememepartie a {
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+  }
+  
+  /* ?======================================partie5 */
+  .partie5 {
+    display: none;
+  }
+  /* ?==============================partie6 */
+  .partie6 {
+    display: none;
+  }
+  /* ?============================partie7 */
+  .partie7 h3 {
+    font-weight: 200;
+  }
+  .partie7 img {
+    width: 30px;
+
+    margin-left: 5px;
+  }
+}
